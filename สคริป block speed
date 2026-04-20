@@ -1,0 +1,81 @@
+-- LocalScript สำหรับลดกราฟิก
+local settings = game:GetService("UserSettings")():GetEfficiencyModeEnabled()
+local terrain = game.Workspace:FindFirstChildOfClass("Terrain")
+
+-- ปรับ Terrain ให้ดูเรียบ
+if terrain then
+    terrain.WaterWaveSize = 0
+    terrain.WaterWaveSpeed = 0
+    terrain.WaterReflectance = 0
+    terrain.WaterTransparency = 0
+end
+
+-- ปิด Lighting เอฟเฟกต์
+local lighting = game:GetService("Lighting")
+lighting.GlobalShadows = false
+lighting.FogEnd = 9e9
+
+-- เปลี่ยน Material ทุกอย่างให้เป็น Plastic (ช่วยให้ดูเหมือนดินน้ำมัน)
+for _, obj in pairs(game.Workspace:GetDescendants()) do
+    if obj:IsA("BasePart") or obj:IsA("MeshPart") then
+        obj.Material = Enum.Material.Plastic
+        obj.Reflectance = 0
+    end
+    if obj:IsA("Decal") or obj:IsA("Texture") then
+        obj:Destroy() -- ลบสติกเกอร์และพื้นผิวออก
+    end
+end
+-- LocalScript สำหรับลดกราฟิก
+local settings = game:GetService("UserSettings")():GetEfficiencyModeEnabled()
+local terrain = game.Workspace:FindFirstChildOfClass("Terrain")
+
+-- ปรับ Terrain ให้ดูเรียบ
+if terrain then
+    terrain.WaterWaveSize = 0
+    terrain.WaterWaveSpeed = 0
+    terrain.WaterReflectance = 0
+    terrain.WaterTransparency = 0
+end
+
+-- ปิด Lighting เอฟเฟกต์
+local lighting = game:GetService("Lighting")
+lighting.GlobalShadows = false
+lighting.FogEnd = 9e9
+
+-- เปลี่ยน Material ทุกอย่างให้เป็น Plastic (ช่วยให้ดูเหมือนดินน้ำมัน)
+for _, obj in pairs(game.Workspace:GetDescendants()) do
+    if obj:IsA("BasePart") or obj:IsA("MeshPart") then
+        obj.Material = Enum.Material.Plastic
+        obj.Reflectance = 0
+    end
+    if obj:IsA("Decal") or obj:IsA("Texture") then
+        obj:Destroy() -- ลบสติกเกอร์และพื้นผิวออก
+    end
+end
+-- LocalScript สำหรับลดกราฟิก
+local settings = game:GetService("UserSettings")():GetEfficiencyModeEnabled()
+local terrain = game.Workspace:FindFirstChildOfClass("Terrain")
+
+-- ปรับ Terrain ให้ดูเรียบ
+if terrain then
+    terrain.WaterWaveSize = 0
+    terrain.WaterWaveSpeed = 0
+    terrain.WaterReflectance = 0
+    terrain.WaterTransparency = 0
+end
+
+-- ปิด Lighting เอฟเฟกต์
+local lighting = game:GetService("Lighting")
+lighting.GlobalShadows = false
+lighting.FogEnd = 9e9
+
+-- เปลี่ยน Material ทุกอย่างให้เป็น Plastic (ช่วยให้ดูเหมือนดินน้ำมัน)
+for _, obj in pairs(game.Workspace:GetDescendants()) do
+    if obj:IsA("BasePart") or obj:IsA("MeshPart") then
+        obj.Material = Enum.Material.Plastic
+        obj.Reflectance = 0
+    end
+    if obj:IsA("Decal") or obj:IsA("Texture") then
+        obj:Destroy() -- ลบสติกเกอร์และพื้นผิวออก
+    end
+end
